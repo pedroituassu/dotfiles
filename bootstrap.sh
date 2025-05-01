@@ -1,14 +1,9 @@
-sudo apt install curl neovim zsh
+sudo apt install curl neovim zsh gcc
 
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 
-git clone https://github.com/LazyVim/starter ~/.config/nvim
-
-rm -rf ~/.config/nvim/.git ~/.config/nvim/lua
-
-ln -sf ~/.dotfiles/nvim/init.lua ~/.config/nvim/init.lua
-ln -sf ~/.dotfiles/nvim/stylua.toml ~/.config/nvim/stylua.toml
-ln -sf ~/.dotfiles/nvim/lua ~/.config/nvim/lua
+rm -rf ~/.config/nvim
+ln -sf ~/.dotfiles/nvim ~/.config/nvim
 
 chsh -s $(which zsh)
 
