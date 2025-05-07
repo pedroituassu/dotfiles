@@ -112,5 +112,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # Aliases
 alias python="python3"
-alias browser="brave-browser & disown && exit"
-alias startup="sudo apt update && sudo apt upgrade && browser"
+alias browser="brave-browser & disown"
+alias updupg="sudo apt update && sudo apt upgrade"
